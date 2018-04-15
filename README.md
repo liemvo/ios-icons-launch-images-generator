@@ -7,7 +7,9 @@ No dependencies.
 
 ## Usage
 
-`Default-Input.png` and `Icon-Input.png` contain the initial graphics for the launch image and icons respectively.
+`Default-Input-portrait.png` and `Default-Input-landscape.png` for launch images assets
+
+`Icon-Input.png` contain the initial graphics for the launch image and icons respectively.
 
 From Terminal run:
 
