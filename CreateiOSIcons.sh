@@ -1,135 +1,65 @@
 #!/bin/sh
 
-# iPhone
-# Spotlight - iOS 5,6
-# Settings - iOS 5-11
-# 29pt 1x,2x,3x
-sips -Z 87 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon87.png
-sips -Z 58 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon58.png
-sips -Z 29 Images.xcassets/AppIcon.appiconset/Icon58.png --out Images.xcassets/AppIcon.appiconset/Icon29.png
+# App Store iOS 1024pt
+cp Icon-Input.png Images.xcassets/AppIcon.appiconset/1024@x.png
 
-# iPhone
-# Spotlight - iOS 7-11
-# 40pt 2x,3x
-sips -Z 120 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon120.png
-sips -Z 80 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon80.png
+# iPad Pro App 
+# iOS 9-11
+# 83.5pt - 2x
+sips -Z 167 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/83.5@2x.png
 
-# iPhone
-# App - iOS 5,6
-# 57pt 1x,2x
-sips -Z 114 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon114.png
-sips -Z 57 Images.xcassets/AppIcon.appiconset/Icon114.png --out Images.xcassets/AppIcon.appiconset/Icon57.png
+# iPad App
+# iOS 7-11
+# 76pt - x, 2x
+sips -Z 152 Images.xcassets/AppIcon.appiconset/83.5@2x.png --out Images.xcassets/AppIcon.appiconset/76@2x.png
+sips -Z 76 Images.xcassets/AppIcon.appiconset/83.5@2x.png --out Images.xcassets/AppIcon.appiconset/76@x.png
 
-# iPhone
-# App - iOS 7-11
-# 60pt 2x,3x
-sips -Z 180 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon180.png
-#sips -Z 120 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon120.png # duplicate
+# iPad App
+# iOS 5,6
+# 72pt - x, 2x
+sips -Z 144 Images.xcassets/AppIcon.appiconset/76@2x.png --out Images.xcassets/AppIcon.appiconset/72@2x.png
+sips -Z 72 Images.xcassets/AppIcon.appiconset/76@x.png --out Images.xcassets/AppIcon.appiconset/72@x.png
 
-# iPhone
-# Notification - iOS 7-11
-# 20pt 2x,3x
-sips -Z 60 Images.xcassets/AppIcon.appiconset/Icon120.png --out Images.xcassets/AppIcon.appiconset/Icon60.png
-sips -Z 40 Images.xcassets/AppIcon.appiconset/Icon80.png --out Images.xcassets/AppIcon.appiconset/Icon40.png
+# iPad Spotlight
+# iOS 5,6
+# 50pt - x, 2x
+sips -Z 100 Images.xcassets/AppIcon.appiconset/76@2x.png --out Images.xcassets/AppIcon.appiconset/50@2x.png
+sips -Z 50 Images.xcassets/AppIcon.appiconset/76@x.png --out Images.xcassets/AppIcon.appiconset/50@x.png
 
+# iPad & iPhone Spotlight
+# iOS 7-11
+# 40pt - x, 2x, 3x
+sips -Z 120 Images.xcassets/AppIcon.appiconset/76@2x.png --out Images.xcassets/AppIcon.appiconset/40@3x.png
+sips -Z 80 Images.xcassets/AppIcon.appiconset/50@2x.png --out Images.xcassets/AppIcon.appiconset/40@2x.png
+cp Images.xcassets/AppIcon.appiconset/40@2x.png Images.xcassets/AppIcon.appiconset/ipad-40@2x.png
+sips -Z 40 Images.xcassets/AppIcon.appiconset/50@x.png --out Images.xcassets/AppIcon.appiconset/40@x.png
 
-# iPad
-# Settings iOS 5-11
-#sips -Z 58 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon58.png # duplicate
-#sips -Z 29 Images.xcassets/AppIcon.appiconset/Icon58.png --out Images.xcassets/AppIcon.appiconset/Icon29.png # duplicate
+# iPad Settings & iPhone Spotlight - iOS 5,6 & iPhone Settings - iOS5-11
+# iOS 5-11
+# 29pt - x, 2x,37
+sips -Z 87 Images.xcassets/AppIcon.appiconset/50@2x.png --out Images.xcassets/AppIcon.appiconset/29@3x.png
+sips -Z 58 Images.xcassets/AppIcon.appiconset/50@2x.png --out Images.xcassets/AppIcon.appiconset/29@2x.png
+cp Images.xcassets/AppIcon.appiconset/29@2x.png Images.xcassets/AppIcon.appiconset/ipad-29@2x.png
+sips -Z 29 Images.xcassets/AppIcon.appiconset/50@x.png --out Images.xcassets/AppIcon.appiconset/29@x.png
+cp Images.xcassets/AppIcon.appiconset/29@x.png Images.xcassets/AppIcon.appiconset/ipad-29@x.png
 
-# iPad
-# Spotlight iOS 7-11
-# 40pt 1x,2x
-#sips -Z 80 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon80.png # duplicate
-#sips -Z 40 Images.xcassets/AppIcon.appiconset/Icon80.png --out Images.xcassets/AppIcon.appiconset/Icon40.png # duplicate
-
-# iPad
-# Spotlight iOS 5,6
-# 50pt 1x,2x
-sips -Z 100 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon100.png
-sips -Z 50 Images.xcassets/AppIcon.appiconset/Icon100.png --out Images.xcassets/AppIcon.appiconset/Icon50.png
-
-# iPad
-# App iOS 5,6
-# 72pt 1x,2x
-sips -Z 144 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon144.png
-sips -Z 72 Images.xcassets/AppIcon.appiconset/Icon144.png --out Images.xcassets/AppIcon.appiconset/Icon72.png
-
-# iPad
-# App iOS 7-11
-# 76pt 1x,2x
-sips -Z 152 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon152.png
-sips -Z 76 Images.xcassets/AppIcon.appiconset/Icon152.png --out Images.xcassets/AppIcon.appiconset/Icon76.png
-
-# iPad Pro 12.9"
-# App iOS 9-11
-# 83.5pt 2x
-sips -Z 167 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon167.png
-
-# iPad
-# Notification - iOS 7-11
-# 20pt 1x,2x
-#sips -Z 40 Images.xcassets/AppIcon.appiconset/Icon80.png --out Images.xcassets/AppIcon.appiconset/Icon40.png # duplicate
-sips -Z 20 Images.xcassets/AppIcon.appiconset/Icon40.png --out Images.xcassets/AppIcon.appiconset/Icon20.png
+# iPad & iPhone Notification
+# iOS 7-11
+# 20pt - x, 2x
+sips -Z 60 Images.xcassets/AppIcon.appiconset/50@2x.png --out Images.xcassets/AppIcon.appiconset/20@3x.png
+sips -Z 40 Images.xcassets/AppIcon.appiconset/50@2x.png --out Images.xcassets/AppIcon.appiconset/20@2x.png
+cp Images.xcassets/AppIcon.appiconset/20@2x.png Images.xcassets/AppIcon.appiconset/ipad-20@2x.png
+sips -Z 20 Images.xcassets/AppIcon.appiconset/50@x.png --out Images.xcassets/AppIcon.appiconset/20@x.png
 
 
-# CarPlay
-# App
-# 60pt 2x,3x
-#sips -Z 180 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon180.png # duplicate
-#sips -Z 120 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon120.png # duplicate
+# iPhone App
+# iOS 7-11
+# 60pt - 2x, 3x
+sips -Z 180 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/60@3x.png
+sips -Z 120 Images.xcassets/AppIcon.appiconset/83.5@2x.png --out Images.xcassets/AppIcon.appiconset/60@2x.png
 
-
-# Apple Watch
-# Notification Center
-# 38mm, 42mm
-sips -Z 48 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon48.png
-sips -Z 55 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon55.png
-
-# Apple Watch
-# Companion Settings
-# 29pt 2x,3x
-#sips -Z 58 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon58.png # duplicate
-#sips -Z 87 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon87.png # duplicate
-
-# Apple Watch
-# Home Screen (All)
-# Long Look (38mm)
-#sips -Z 80 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon80.png # duplicate
-
-# Apple Watch
-# Long Look (42mm)
-sips -Z 88 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon88.png
-
-# Apple Watch
-# Short Look
-# 38mm, 42mm
-sips -Z 172 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon172.png
-sips -Z 196 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon196.png
-
-
-# OS X
-# 512pt 1x,2x
-sips -Z 1024 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon1024.png
-sips -Z 512 Images.xcassets/AppIcon.appiconset/Icon1024.png --out Images.xcassets/AppIcon.appiconset/Icon512.png
-
-# OS X
-# 256pt 1x,2x
-#sips -Z 512 Images.xcassets/AppIcon.appiconset/Icon1024.png --out Images.xcassets/AppIcon.appiconset/Icon512.png # duplicate
-sips -Z 256 Images.xcassets/AppIcon.appiconset/Icon512.png --out Images.xcassets/AppIcon.appiconset/Icon256.png
-
-# OS X
-# 128pt 1x,2x
-#sips -Z 256 Images.xcassets/AppIcon.appiconset/Icon512.png --out Images.xcassets/AppIcon.appiconset/Icon256.png # duplicate
-sips -Z 128 Images.xcassets/AppIcon.appiconset/Icon256.png --out Images.xcassets/AppIcon.appiconset/Icon128.png
-
-# OS X
-# 32pt 1x,2x
-sips -Z 64 Images.xcassets/AppIcon.appiconset/Icon128.png --out Images.xcassets/AppIcon.appiconset/Icon64.png
-sips -Z 32 Images.xcassets/AppIcon.appiconset/Icon64.png --out Images.xcassets/AppIcon.appiconset/Icon32.png
-
-# OS X
-# 16pt 1x,2x
-#sips -Z 32 Images.xcassets/AppIcon.appiconset/Icon64.png --out Images.xcassets/AppIcon.appiconset/Icon32.png # duplicate
-sips -Z 16 Images.xcassets/AppIcon.appiconset/Icon32.png --out Images.xcassets/AppIcon.appiconset/Icon16.png
+# iPhone App
+# iOS 5,6
+# 57pt - x, 2x
+sips -Z 114 Images.xcassets/AppIcon.appiconset/76@2x.png --out Images.xcassets/AppIcon.appiconset/57@2x.png
+sips -Z 57 Images.xcassets/AppIcon.appiconset/76@x.png --out Images.xcassets/AppIcon.appiconset/57@x.png
